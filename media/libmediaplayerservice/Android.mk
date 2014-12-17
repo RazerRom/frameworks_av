@@ -24,6 +24,8 @@ LOCAL_SRC_FILES:=               \
     TestPlayerStub.cpp          \
     VideoFrameScheduler.cpp     \
 
+LOCAL_CPPFLAGS += -fno-strict-aliasing
+
 LOCAL_SHARED_LIBRARIES :=       \
     libbinder                   \
     libcamera_client            \

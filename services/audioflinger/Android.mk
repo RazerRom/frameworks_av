@@ -38,6 +38,8 @@ LOCAL_C_INCLUDES := \
     $(call include-path-for, audio-effects) \
     $(call include-path-for, audio-utils)
 
+LOCAL_CPPFLAGS += -fno-tree-vectorize -fno-strict-aliasing
+
 LOCAL_SHARED_LIBRARIES := \
     libaudioresampler \
     libaudioutils \

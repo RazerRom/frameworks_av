@@ -82,6 +82,8 @@ LOCAL_C_INCLUDES:= \
         $(TOP)/external/icu/icu4c/source/i18n \
         $(TOP)/external/jpeg \
 
+LOCAL_CPPFLAGS += -fno-strict-aliasing
+
 LOCAL_SHARED_LIBRARIES := \
         libbinder \
         libcamera_client \
