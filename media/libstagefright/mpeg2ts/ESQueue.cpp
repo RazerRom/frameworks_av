@@ -47,9 +47,6 @@
 #include <media/stagefright/MediaDefs.h>
 #include <media/stagefright/MetaData.h>
 #include <media/stagefright/Utils.h>
-#ifdef ENABLE_AV_ENHANCEMENTS
-#include <QCMetaData.h>
-#endif
 
 #include "include/avc_utils.h"
 #include "include/ExtendedUtils.h"
