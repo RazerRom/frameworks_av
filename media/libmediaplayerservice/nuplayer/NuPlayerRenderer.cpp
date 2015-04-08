@@ -1191,6 +1191,11 @@ void NuPlayer::Renderer::onFlush(const sp<AMessage> &msg) {
             mAudioSink->pause();
             mAudioSink->flush();
             mAudioSink->start();
+        } else {
+            if (mPaused) {
+                mAudioSink->flush();
+                mNumFramesWritten = 0;
+            }
         }
     } else {
         flushQueue(&mVideoQueue);
