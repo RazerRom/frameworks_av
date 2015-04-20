@@ -47,6 +47,9 @@ LOCAL_C_INCLUDES := \
 LOCAL_CFLAGS := -DOSCL_EXPORT_REF= -DOSCL_IMPORT_REF=
 
 LOCAL_CFLAGS += -Werror
+ifeq ($(TARGET_ARCH),arm64)
+LOCAL_CFLAGS += -Wno-error=strict-overflow
+endif
 
 include $(BUILD_STATIC_LIBRARY)
 
