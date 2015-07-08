@@ -229,6 +229,10 @@ LOCAL_C_INCLUDES += \
 	$(TOP)/$(TARGET_HAL_PATH)/include
 endif
 
+# FFMPEG plugin
+LOCAL_C_INCLUDES += \
+	$(TOP)/external/stagefright-plugins/include
+
 LOCAL_MODULE:= libstagefright
 
 LOCAL_MODULE_TAGS := optional
